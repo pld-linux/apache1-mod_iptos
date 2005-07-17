@@ -1,6 +1,7 @@
 %define		mod_name	iptos
 %define 	apxs		%{_sbindir}/apxs1
-Summary:	Apache module: assign IPTOS bits to different vhosts or directories.
+Summary:	Apache module: assign IPTOS bits to different vhosts or directories
+Summary(pl):	Modu³ Apache'a: przypisywanie bitów IPTOS do ró¿nych vhostów i katalogów
 Name:		apache1-mod_%{mod_name}
 Version:	1.1
 Release:	0.1
@@ -18,12 +19,21 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_sysconfdir	%(%{apxs} -q SYSCONFDIR 2>/dev/null)
 
 %description
-Modify IPTOS bits on outbound data for fine-tuned traffic shaping
-mod_iptos is a module for apache 1.3.x which allows the admin to
+Modify IPTOS bits on outbound data for fine-tuned traffic shaping.
+mod_iptos is a module for Apache 1.3.x which allows the admin to
 assign different IPTOS bits to different vhosts or directories. This
 can be used in combination with traffic shaping to give much better
 control (than other userland-only solutions such as mod_bandwidth)
 over the bandwidth for various portions of a website.
+
+%description -l pl
+Modu³ ten ma na celu modyfikowanie bitów IPTOS danych wychodz±cych w
+celu poprawienia mo¿liwo¶ci ograniczania pasma. mod_iptos to modu³ dla
+Apache'a 1.3.x umo¿liwiaj±cy przypisywanie ró¿nych bitów IPTOS do
+ró¿nych vhostów i katalogów. Mo¿na to wykorzystaæ w po³±czeniu z
+ograniczaniem ruchu w celu lepszej kontroli (ni¿ inne rozwi±zania
+dzia³aj±ce wy³±cznie w przestrzeni u¿ytkownika, takie jak
+mod_bandwidth) nad pasmem dla ró¿nych czê¶ci serwisu WWW.
 
 %prep
 %setup -q -n libapache-mod-%{mod_name}-%{version}
