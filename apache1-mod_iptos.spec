@@ -1,7 +1,7 @@
 %define		mod_name	iptos
 %define 	apxs		%{_sbindir}/apxs1
 Summary:	Apache module: assign IPTOS bits to different vhosts or directories
-Summary(pl.UTF-8):   Moduł Apache'a: przypisywanie bitów IPTOS do różnych vhostów i katalogów
+Summary(pl.UTF-8):	Moduł Apache'a: przypisywanie bitów IPTOS do różnych vhostów i katalogów
 Name:		apache1-mod_%{mod_name}
 Version:	1.1
 Release:	0.1
