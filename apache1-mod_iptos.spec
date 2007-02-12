@@ -1,7 +1,7 @@
 %define		mod_name	iptos
 %define 	apxs		%{_sbindir}/apxs1
 Summary:	Apache module: assign IPTOS bits to different vhosts or directories
-Summary(pl):	Modu³ Apache'a: przypisywanie bitów IPTOS do ró¿nych vhostów i katalogów
+Summary(pl.UTF-8):   ModuÅ‚ Apache'a: przypisywanie bitÃ³w IPTOS do rÃ³Å¼nych vhostÃ³w i katalogÃ³w
 Name:		apache1-mod_%{mod_name}
 Version:	1.1
 Release:	0.1
@@ -26,14 +26,14 @@ can be used in combination with traffic shaping to give much better
 control (than other userland-only solutions such as mod_bandwidth)
 over the bandwidth for various portions of a website.
 
-%description -l pl
-Modu³ ten ma na celu modyfikowanie bitów IPTOS danych wychodz±cych w
-celu poprawienia mo¿liwo¶ci ograniczania pasma. mod_iptos to modu³ dla
-Apache'a 1.3.x umo¿liwiaj±cy przypisywanie ró¿nych bitów IPTOS do
-ró¿nych vhostów i katalogów. Mo¿na to wykorzystaæ w po³±czeniu z
-ograniczaniem ruchu w celu lepszej kontroli (ni¿ inne rozwi±zania
-dzia³aj±ce wy³±cznie w przestrzeni u¿ytkownika, takie jak
-mod_bandwidth) nad pasmem dla ró¿nych czê¶ci serwisu WWW.
+%description -l pl.UTF-8
+ModuÅ‚ ten ma na celu modyfikowanie bitÃ³w IPTOS danych wychodzÄ…cych w
+celu poprawienia moÅ¼liwoÅ›ci ograniczania pasma. mod_iptos to moduÅ‚ dla
+Apache'a 1.3.x umoÅ¼liwiajÄ…cy przypisywanie rÃ³Å¼nych bitÃ³w IPTOS do
+rÃ³Å¼nych vhostÃ³w i katalogÃ³w. MoÅ¼na to wykorzystaÄ‡ w poÅ‚Ä…czeniu z
+ograniczaniem ruchu w celu lepszej kontroli (niÅ¼ inne rozwiÄ…zania
+dziaÅ‚ajÄ…ce wyÅ‚Ä…cznie w przestrzeni uÅ¼ytkownika, takie jak
+mod_bandwidth) nad pasmem dla rÃ³Å¼nych czÄ™Å›ci serwisu WWW.
 
 %prep
 %setup -q -n libapache-mod-%{mod_name}-%{version}
