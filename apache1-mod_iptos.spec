@@ -10,7 +10,7 @@ Group:		Networking/Daemons
 Source0:	http://www.arctic.org/~dean/mod_iptos/libapache-mod-%{mod_name}_%{version}.orig.tar.gz
 # Source0-md5:	1e5582acf63b6fabf567ecb79e57bdd5
 URL:		http://www.arctic.org/~dean/mod_iptos/
-BuildRequires:	apache1-devel >= 1.3.33-2
+BuildRequires:	apache1-devel >= 1.3.39
 BuildRequires:	rpmbuild(macros) >= 1.228
 Requires:	apache1 >= 1.3.33-2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
